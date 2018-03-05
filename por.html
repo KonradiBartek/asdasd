@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Vain</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+<link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin-ext" rel="stylesheet">
+             
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<body>
+    
+ <header class="shadow">
+    <div id="header-inner">
+       <a href="index.html" id="logo"></a>
+     </div>
+<h1>Vainglorious.pl</h1>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            
+            <ul>
+                <li></li>
+                <li><p class="link" onclick="location.href='index.html'">home</p></li>
+                <li><p class="link">news</p></li>
+
+                <li class="activ" ><p class="link" onclick="location.href='por.html'">Postacie</p></li>
+                <li><p class="link">Kontakt</p></li>
+            </ul>
+        </nav>
+    </header>
+      <!--End Header-->
+<section id="stats">
+    <div class="allHeroes">
+            <div id="hero0" class="heroes shadow">
+                <h2 class="postac">Hero0 </h2> 
+                
+                
+                <li class="heroList">
+            
+                    
+    <ul class="heroStats">
+        Health 
+        <span class="r0"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Health Regeneration
+        <span class="r1"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Energy 
+        <span class="r2"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Energy Regeneration
+        <span class="r3"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Weapon Damage 
+        <span class="r4"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Attack Speed 
+        <span class="r5"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Armor 
+        <span class="r6"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Shield 
+        <span class="r7"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Attack Range 
+        <span class="r8"></span>
+        <span class="underNum"></span>
+                    </ul>
+    <ul class="heroStats">
+        Move speed 
+        <span class="r9"></span>
+        <span class="underNum"></span>
+                    </ul>
+                    
+                    
+                    
+                    
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+
+            
+
+           
+        </li>
+                
+                
+                
+                
+            </div>
+            <div id="hero1" class="heroes shadow hide">
+                <h2>Hero1</h2>
+                        <li class="heroList">
+            
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+            <ul class="heroStats">Statystyka: <span class="num">32</span> <span class="underNum"></span></ul>
+
+            
+
+           
+        </li>
+            </div>
+        
+
+        
+                <script>
+          
+        </script>
+        <div id="pictures" class="shadow">
+            <div class="compareCheck"  id="compare">porównaj statystyki</div><div id="backToStats" class="hide compareCheck">powrót do statystyk</div>
+                <h2>heroes</h2>
+            <div id="picturesIn">
+ <script>
+        for (imgNr=0; imgNr<34; imgNr++) {
+        var hero = "<img id=\"h"+imgNr+"\" class=\"hero\" alt=\"postać\"  src=\"heroes/"+imgNr+".jpg\"/>"; //img list with heroes                   
+        document.write(hero); 
+		} 
+     
+       $( "#compare" ).click(function() {
+            $( "#hero1" ).removeClass("hide")
+            $( "#hero1" ).addClass("wide");
+            $( "#compare" ).addClass("hide");
+            $( "#backToStats" ).removeClass("hide");
+            $( "#hero1" ).removeClass("short");
+            $( "#hero1" ).removeClass("opacity");
+            
+});
+        $( "#backToStats" ).click(function() {
+            
+            $( "#backToStats" ).addClass("hide");
+            $( "#compare" ).removeClass("hide");
+            $( "#hero1" ).removeClass("wide");
+            $( "#hero1" ).addClass("short");
+            $( "#hero1" ).addClass("opacity");
+            
+            
+            });
+     
+     function heroes(n) {
+        for(var n=0; n<34; n++){
+                $("#h"+n).click(function(){
+                    
+                        for(var nr=0; nr<10; nr++){
+                            
+                            var ss = document.getElementsByClassName("r"+nr); ss[0].textContent = tablicaImion[0][1];
+                        }
+                       
+        })}};
+     
+      tablicaImion=[
+                        name=[
+                        rat=['addddd'],
+                        bat=['sssss'],
+                        asd=['dddddddddddddddddd'],
+                       
+                       ],
+                       
+                       
+                       
+                       
+                       'alpha', 'ardan', 'baptiste', 'baron', 'blackfeather', 'catherine', 'celeste', 'chunwalker', 'flicker', 'fortres', 'glaive', 'grace', 'grumpjaw', 'gwen', '        idris', 'joule', 'kestrel', 'krul', 'lance', 'lyra', 'ozo', 'petal', 'phinn', 'reim', 'reza', 'ringo', 'rona', 'samuel', 'saw', 'skarf', 'skye', 'taka', 'vox'];
+     
+     
+    </script>
+                </div>
+            </div>
+    </div>
+    
+    </section>
+    
+    
+    <footer class="shadow">Stopka</footer>
+    
+    <script>for (var z=0; z<34; z++){heroes(z);}</script>
+</body>
+</html>
